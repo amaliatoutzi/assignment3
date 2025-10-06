@@ -199,8 +199,6 @@ ASSIGNMENT3/
 ```
 
 ## Test Cases
-
-Test Cases
 The application includes three comprehensive test cases that exercise the final Spotlight prompt and concept actions.
 
 ### 1. Cold Start → First Taste → AI Recommendations

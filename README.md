@@ -194,8 +194,6 @@ ASSIGNMENT3/
 │   ├─ output.png                      # (PNG/JPG/PDF files)
 │   ├─ popular.png                      # (PNG/JPG/PDF files)
 │   ├─ rationale.png                      # (PNG/JPG/PDF files)
-├─ dist/                        # Compiled JavaScript output (tsc -> dist)│
-└─ node_modules/                # Installed packages (auto-generated)
 ```
 
 ## Test Cases

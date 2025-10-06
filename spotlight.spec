@@ -16,7 +16,7 @@ a set of TasteSignals with
     a user User
     a museum Museum
     a score Number                            // relative rank score from the LLM output (0..1)
-    a rationale String                        // human-readable 1–2 sentence reason
+    a rationale String                        // human-readable reason
     a generatedAt DateTime
 
 actions
@@ -44,5 +44,4 @@ query
 getRecommendations (user: User, k: Number) : List<(museum: Museum, rationale: String)>
   requires k ≥ 1
   effects return the top-k rows from Recommendations for user by score, most recent generatedAt; no LLM call
-
 </concept_spec>

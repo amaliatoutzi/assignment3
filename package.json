@@ -1,18 +1,25 @@
 {
-  "name": "gemini-schedule-demo",
+  "name": "gemini-spotlight-demo",
   "version": "1.0.0",
-  "description": "A demo application showing how to use Google's Gemini API to create student schedules",
-  "main": "dist/dayplanner-tests.js",
+  "description": "A demo application showing how to use Google's Gemini API to recommend museums with rationales",
+  "main": "dist/spotlight-tests.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/dayplanner-tests.js",
-    "dev": "ts-node --transpile-only dayplanner-tests.ts",
-    "test": "npm run build && node dist/dayplanner-tests.js",
-    "manual": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testManualScheduling()\"",
-    "llm": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testLLMScheduling()\"",
-    "mixed": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testMixedScheduling()\""
+    "start": "npm run build && node dist/spotlight-tests.js",
+    "dev": "ts-node --transpile-only src/spotlight-tests.ts",
+    "test": "npm run build && node dist/spotlight-tests.js",
+    "cold": "npm run build && node -e \"require('./dist/spotlight-tests.js').testColdStartThenAI()\"",
+    "history": "npm run build && node -e \"require('./dist/spotlight-tests.js').testHistoryAndRefresh()\"",
+    "error": "npm run build && node -e \"require('./dist/spotlight-tests.js').testLLMErrorFallback()\""
   },
-  "keywords": ["gemini", "ai", "schedule", "student", "demo", "typescript"],
+  "keywords": [
+    "gemini",
+    "ai",
+    "spotlight",
+    "museums",
+    "recommendations",
+    "typescript"
+  ],
   "author": "Student Demo",
   "license": "MIT",
   "dependencies": {
@@ -20,7 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }

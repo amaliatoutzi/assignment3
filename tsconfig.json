@@ -20,9 +20,9 @@
     "*.ts"
   ],
   "files": [
-    "dayplanner.ts",
+    "spotlight-ai.ts",
     "gemini-llm.ts",
-    "dayplanner-tests.ts"
+    "spotlight-tests.ts"
   ],
   "exclude": [
     "node_modules",
